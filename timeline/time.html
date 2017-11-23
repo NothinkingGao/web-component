@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div class="time-line">
+		<ul>
+			<li class="parent">
+				<div class="date" style="width:37.33px">2017</div>
+				<div class="child" style="width:80px;height:35px;">
+					<div class="year-circle"></div>
+				</div>
+			</li>
+			<li class="parent">
+				<div class="date">09-10</div>
+				<ul class="child">
+					<div class="circle"></div>
+					<li>Time Line Content1</li>
+				</ul>
+			</li>
+			<li class="parent">
+				<div class="date">09-10</div>
+				<ul class="child">
+					<div class="circle"></div>
+					<li>Time Line Content1</li>
+					<li>Time Line Content2</li>
+					<li>Time Line Content3</li>
+				</ul>
+			</li>
+			<li class="parent">
+				<div class="date">09-10</div>
+				<ul class="child">
+					<div class="circle"></div>
+					<li>Time Line Content1</li>
+					<li>Time Line Content2</li>
+					<li>Time Line Content3</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<style>
+		.time-line{
+
+	}
+	.time-line .date{
+		padding:0 20px 0 0;
+		display: inline-block;
+	}
+	.time-line .parent{
+		line-height:35px;
+	}
+	.time-line ul li{
+		list-style: none;
+	} 
+	.time-line .child{
+		vertical-align: top;
+		border-left: 1px solid #bcbcbc;
+		padding:2px 0 2px 20px;
+		display: inline-block;
+		position: relative;
+	}
+	.child li{
+		white-space:nowrap;
+		overflow: hidden;
+		width:450px;
+		text-overflow: ellipsis;;
+	}
+	.circle{
+		background-color: #5A7AAC;
+		border-radius: 20px;
+		width:20px;
+		height: 20px;
+		position:absolute;
+		left:-10px;
+		top:7.5px;
+	}
+	.year-circle{
+		border:1px solid #5A7AAC;
+		background-color: #5A7AAC;
+		border-radius: 30px;
+		width:30px;
+		height: 30px;
+		position:absolute;
+		left:-15px;
+	}
+	ul{padding:0;}
+	</style>
+</body>
+</html>
